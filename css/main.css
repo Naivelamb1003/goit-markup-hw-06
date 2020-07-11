@@ -801,8 +801,6 @@ cursor: pointer;
 .backdroup.is-hidden{
   opacity: 0;
   pointer-events: none;
-
-
 }
 
 .modal{
@@ -811,7 +809,7 @@ cursor: pointer;
   left: 50%;
   transform:translate(-50%, -50%);
   
-
+  
   height: 581px;
   width: 528px;
   padding: 40px;
@@ -822,3 +820,40 @@ cursor: pointer;
  
 }
 
+.heading-modal{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--title-text-color);
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.form{
+  width: 448px;
+  margin-top: 30px;
+}
+
+.form-field{
+  position: relative;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.form-input{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 12px 42px;
+    background-color: var(--primary-fon-color);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline-color: #2196f3;
+}
