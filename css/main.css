@@ -11,6 +11,9 @@
   --social-link: #AFB1B8;
   --social-link-accent: #FFFFFF;
   --social-item-accent: #2196f3;
+  --background-modal-form:rgba(33, 33, 33, 0.2);
+  --main-modal-form:#ffffff;
+  
 
 }
 
@@ -783,7 +786,39 @@ cursor: pointer;
   line-height: 1.5;
   letter-spacing: 0.03rem;
 }
+/* --------------- */
+/* Модальное окно */
+/* -------------- */
+.backdroup{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-modal-form);
+}
+
+.backdroup.is-hidden{
+  opacity: 0;
+  pointer-events: none;
 
 
+}
 
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  
+
+  height: 581px;
+  width: 528px;
+  padding: 40px;
+
+  background-color: var(--main-modal-form);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+ 
+}
 
