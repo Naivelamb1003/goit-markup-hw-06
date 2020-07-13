@@ -429,28 +429,42 @@
         <div class="modal">
             <p class="heading-modal"> Оставьте свои данные, мы вам перезвоним </p>
             <form class="form">
-                <label class="form-field" for="name"> Имя
-                    <input class="form-input" type="text" name="name" id="name" />
+                <label class="form-field" for="name">
+                    <input class="form-input" type="text" name="name" id="name" placeholder=" " />
+                    <span class="form-label"> Имя </span>
+                    <svg class="icon" width="18px" height="18px">
+                        <use href=" ./images/main/symbol-defs.svg#icon-Vector"></use>
+                    </svg>
                 </label>
 
-                <label class="form-field" for="tel"> Телефон
-                    <input class="form-input" type="tel" name="telephone" id="tel" />
+                <label class="form-field" for="tel">
+                    <input class="form-input" type="tel" name="telephone" id="tel" placeholder=" " />
+                    <span class="form-label"> Телефон </span>
+                    <svg class="icon" width="18px" height="18px">
+                        <use href=" ./images/main/symbol-defs.svg#icon-Vectorphone"></use>
+                    </svg>
                 </label>
 
-                <label class="form-field" for="email"> Почта
-                    <input class="form-input" type="email" name="email" id="email" autocomplete="email" />
+                <label class="form-field" for="email">
+                    <input class="form-input" type="email" name="email" id="email" autocomplete="email"
+                        placeholder=" " />
+                    <span class="form-label"> Почта </span>
+                    <svg class="icon" width="18px" height="18px">
+                        <use href=" ./images/main/symbol-defs.svg#icon-Vectorposht"></use>
+                    </svg>
                 </label>
 
                 <label class="form-field">
-                    <textarea name="comment"></textarea>
+                    <textarea name="comment" class="form-input input-comment" placeholder=" "></textarea>
+                    <span class="form-label comment-label">Комментарий</span>
                 </label>
 
-                <label>
+                <label class="privacy">
                     <input class="checkbox" type="checkbox" name="acceptance"
                         value="Соглашаюсь с рассылкой и принимаю Условия договора">
                 </label>
-                <button class="submit-button" type="submit">Оставить заявку</button>
 
+                <button class="submit-button" type="submit">Оставить заявку</button>
             </form>
             <button data-modal-close>Закрыть</button>
 
