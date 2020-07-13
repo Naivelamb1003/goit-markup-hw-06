@@ -919,9 +919,9 @@ cursor: pointer;
 }
 
 .comment-label {
-    top: 18px;
-    left: 16px;
-    position: absolute;
+  top: 18px;
+  left: 16px;
+  position: absolute;
 }
 
 .form-field:focus-within > .comment-label,
@@ -931,8 +931,20 @@ cursor: pointer;
   letter-spacing: 0.01em;
   color: var(--accent-color);
   transform: translateY(-37px);
+}
 
-.privacy {
+.checkbox{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+  }
+
+
+.privacy::after{
+
+  content: '';
   display: inline-block;
-  margin-bottom: 30px;
+  width: ;
 }
